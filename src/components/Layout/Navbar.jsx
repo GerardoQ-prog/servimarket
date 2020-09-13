@@ -6,23 +6,23 @@ import logo from '../../assets/img/logo.png'
 const Navbar = () => {
 return (
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <img src={logo} className=""></img>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        <nav className="navbar navbar-expand-lg navbar-light ">
+            <img src={logo} alt="logo"></img>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search"></input>
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <form className="form-inline my-2 my-lg-0">
+                    <input className="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search"></input>
                 </form>
-                <div class="navbar-nav">
+                <div className="navbar-nav">
 
-                    <NavLink class="nav-link selectec" to="/" activeClassName="selectec">Inicio <span class="sr-only">(current)</span></NavLink>
-                    <NavLink class="nav-link" to="/" >Productos</NavLink>
-                    <NavLink class="nav-link" to="/" >Servicios</NavLink>
-                    <NavLink class="nav-link" to="/" >Ofertas de Empleo</NavLink>
-                    <NavLink class="iniciarsesion" to="/" >Iniciar Sesión</NavLink>
+                    <NavLink className="nav-link selectec" to="/" activeClassName="selectec">Inicio <span className="sr-only">(current)</span></NavLink>
+                    <NavLink className="nav-link" to="/" >Productos</NavLink>
+                    <NavLink className="nav-link" to="/" >Servicios</NavLink>
+                    <NavLink className="nav-link" to="/" >Ofertas de Empleo</NavLink>
+                    <NavLink className="iniciarsesion" to="/" >Iniciar Sesión</NavLink>
                 </div>
             </div>
         </nav>

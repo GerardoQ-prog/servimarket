@@ -1,5 +1,5 @@
 import React from 'react'
-import Heroe from '../../components/Layout/Heroe'
+import Heroe from '../../components/layout/Heroe'
 
 const HomeScreen = () => {
     return (
