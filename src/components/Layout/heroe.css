@@ -1,0 +1,59 @@
+
+.bienvenida{
+    position: static;
+    top: 0;
+    left: 60px;
+    margin: auto;
+    
+    padding: 10px;
+}
+span{
+    color: #F38F19;
+}
+.bienvenida h1{
+    font-size: 60px;
+}
+.bienvenida p{
+    width: 500px;
+    font-size: 25px;
+    margin-top: 32px;
+    line-height: 2.5rem;
+}
+
+@media (max-width:1024px){
+    .bienvenida{
+        position: static;
+        top: 0;
+        left: 60px;
+        margin: auto;
+        padding: 10px;
+    }
+    span{
+        color: #F38F19;
+    }
+    .bienvenida h1{
+        font-size: 40px;
+    }
+    .bienvenida p{
+        width: 280px;
+        font-size: 15px;
+        margin-top: 32px;
+        line-height: 1.8rem;
+    }
+     
+}
+@media (max-width:768px){
+    .bienvenida h1 {
+        font-size: 40px;
+       
+    }
+    .bienvenida p{
+        
+        font-size: 15px;
+        margin-top: 32px;
+        line-height: 1.8rem;
+    }
+    .bienvenida{
+        left: 0px;
+    }
+}

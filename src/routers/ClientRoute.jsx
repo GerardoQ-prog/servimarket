@@ -1,5 +1,7 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import Footer from '../components/Layout/Footer';
+import Navbar from '../components/Layout/Navbar';
 
 import BusinessScreen from '../screens/cliente/BusinessScreen';
 import HomeScreen from '../screens/cliente/HomeScreen';
@@ -11,7 +13,7 @@ const ClientRoute = () => {
     return (
         <>
 
-            <nav> nav </nav>
+            <Navbar></Navbar>
 
             <Switch>
 
@@ -22,7 +24,7 @@ const ClientRoute = () => {
 
             </Switch>
 
-            <footer> footer </footer>
+            <Footer></Footer>
 
         </>
     )

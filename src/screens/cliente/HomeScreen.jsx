@@ -1,10 +1,10 @@
 import React from 'react'
+import Heroe from '../../components/Layout/Heroe'
 
 const HomeScreen = () => {
     return (
         <div>
-            <h1> HomeScreen </h1>
-            <hr/>
+            <Heroe></Heroe>
         </div>
     )
 }
