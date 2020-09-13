@@ -1,25 +1,24 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 
-import './App.css';
+import AppRouter from './routers/AppRouter';
+import userReducer from './reducers/userReducer';
+import { UserContext } from './context/userContext';
+
+
+const  init = () =>  localStorage.getItem('user') || { isLogged: false }
+
 
 function App() {
+
+  const [state, dispatch] = useReducer( userReducer , { }, init );
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img  className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+      <UserContext.Provider value={{ state, dispatch }} >
+        <AppRouter />
+      </UserContext.Provider>
+
   );
 }
 
