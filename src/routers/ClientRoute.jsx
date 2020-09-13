@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 
 import BusinessScreen from '../screens/cliente/BusinessScreen';
 import HomeScreen from '../screens/cliente/HomeScreen';
+import ProductScreen from '../screens/cliente/ProductScreen';
 
 
 
@@ -11,16 +12,23 @@ const ClientRoute = () => {
     return (
         <>
 
-            <nav> nav </nav>
+            <nav >
+                navbar
+            </nav>
+            
+            <div>
 
-            <Switch>
+                <Switch>
 
-                <Route exact path='/welcome' component={ HomeScreen  } />
-                <Route exact path='/business' component={ BusinessScreen } />
+                    <Route exact path='/welcome' component={ HomeScreen  } />
+                    <Route exact path='/business' component={ BusinessScreen } />
+                    <Route exact path='/products' component={ ProductScreen } />
 
-                <Redirect to='/welcome' />
+                    <Redirect to='/welcome' />
 
-            </Switch>
+                </Switch>
+
+            </div>
 
             <footer> footer </footer>
 
